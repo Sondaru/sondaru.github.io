@@ -1,0 +1,115 @@
+/* --- Style global de la page --- */
+body {
+    background-image : url("Images/backgroud.png"); /* Image de fond répétée sur la page */
+    background-repeat: repeat; /* L’image se répète en mosaïque */
+    background-position: left top; /* Position de départ en haut à gauche */
+    background-attachment: scroll; /* Le fond défile avec la page */
+    background-size : 1000px 800px ; /* Taille imposée de l’image de fond */
+    margin: 0; /* Supprime les marges par défaut du navigateur */
+    font-size: 20px; /* Taille du texte */
+}
+
+/* --- En-tête (header) --- */
+header {
+    background-color: #fdc780; /* Couleur de fond orangée */
+    color: rgb(0, 0, 0); /* Texte en noir */
+    padding: 5px; /* Espace intérieur autour du contenu */
+}
+
+#header {
+    font-size: 40px; /* Taille du texte du titre principal */
+    padding-left: 10px; /* Petit décalage à gauche du titre */
+}
+
+/* --- Pied de page (footer) --- */
+footer {
+    background-color: #fdc780; /* Même couleur que le header pour uniformité */
+    color: rgb(0, 0, 0); /* Texte noir */
+    padding: 8px; /* Espacement interne */
+    text-align: center; /* Centre le texte du footer */
+}
+
+#footer {
+    font-size: 30px; /* Taille du texte du footer (non utilisée ici mais prête à servir) */
+}
+
+/* --- Menu latéral (classe .Bar) --- */
+.Bar {
+    height: 100%; /* Hauteur totale de la fenêtre */
+    width: 0; /* Menu caché par défaut */
+    position: fixed; /* Position fixe : reste visible même en scrollant */
+    z-index: 1; /* Priorité d’affichage (devant le contenu) */
+    top: 0;
+    left: 0;
+    background-color: #a5ffd8; /* Couleur de fond vert clair */
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+    padding-top: 60px; /* Espace en haut pour éviter de coller au bord */
+    transition: 0.5s; /* Animation fluide lors de l’ouverture/fermeture */
+}
+
+/* Liens à l’intérieur du menu */
+.Bar a {
+  padding: 20px 8px 8px 32px; /* Espacement interne autour du texte */
+  text-decoration: none; /* Supprime le soulignement */
+  font-size: 25px; /* Taille du texte */
+  color: black; /* Couleur du texte */
+  display: block; /* Chaque lien prend toute la largeur */
+  transition: 0.3s; /* Animation lors du survol */
+}
+
+/* Effet au survol des liens du menu */
+.Bar a:hover {
+  background-color: #d59eff; /* Fond violet clair au survol */
+  color: black; /* Couleur du texte inchangée */
+}
+
+/* Bouton "×" pour fermer le menu */
+.Bar .close_button {
+  position: absolute; /* Position fixe dans la barre */
+  top: 0; /* En haut du menu */
+  right: 25px; /* Décalé un peu à gauche du bord droit */
+  font-size: 36px; /* Taille du symbole × */
+  margin-left: 50px; /* Décalage esthétique */
+}
+
+/* Effet de transition pour décaler le contenu principal quand le menu s’ouvre */
+#main {
+  transition: margin-left .5s; /* Animation de déplacement du contenu */
+}
+
+/* Couleur du bouton de fermeture au survol */
+.Bar #close:hover {
+    background-color: #a5ffd8; /* Même fond que la barre */
+    color: darkgrey; /* Symbole devient gris au survol */
+}
+
+/* Changement de couleur du symbole ☰ au survol */
+#menu:hover {
+  color: rgb(114, 114, 114);
+}
+
+/* --- Mise en forme du tableau --- */
+table, td, th {
+  border: 1px solid; /* Bordure noire fine pour tout le tableau */
+}
+table {
+  border-collapse: collapse; /* Fusionne les bordures pour un rendu net */
+  width: auto; /* Largeur ajustée au contenu */
+}
+th, td {
+  padding: 5px; /* Espacement intérieur dans les cellules */
+}
+td {
+  text-align: center; /* Contenu centré dans les cellules */
+}
+
+/* --- Image d’illustration de la section HISTOIRE --- */
+#image {
+  width: 25%; /* Image redimensionnée à 25% de la largeur de la page */
+}
+
+.paragraphe {
+  border-width: 1px;
+  border-style: solid;
+  border-color:#fdc780;
+}

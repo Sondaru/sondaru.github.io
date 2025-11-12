@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"> <!-- Permet d’afficher correctement les caractères accentués -->
+    <title>Vroum.fr</title> <!-- Titre de la page qui apparaît dans l’onglet du navigateur -->
+    <link rel="stylesheet" href="CSS_all.css"> <!-- Lien vers la feuille de style CSS -->
+</head>
+
+<body id="main"> <!-- Contenu principal du site -->
+    <script>
+        // Fonction qui ouvre le menu latéral
+        function openNav() {
+            document.getElementById("MaBar").style.width = "350px"; // Largeur du menu = 350px
+            document.getElementById("main").style.marginLeft = "350px"; // Décale le reste du contenu
+        }
+
+        // Fonction qui ferme le menu latéral
+        function closeNav() {
+            document.getElementById("MaBar").style.width = "0"; // Cache le menu (largeur 0)
+            document.getElementById("main").style.marginLeft= "0"; // Ramène le contenu à sa position normale
+        }
+    </script>
+
+    <!-- En-tête du site -->
+    <header>
+        <!-- Icône du menu ☰ qui permet d’ouvrir la barre latérale -->
+        <h1 id="header">
+            <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+            LE MOTEUR EN W
+        </h1> 
+    </header>
+
+    <!-- Menu latéral (navigation du site) -->
+    <div id="MaBar" class="Bar">
+        <!-- Bouton × pour fermer le menu -->
+        <a id="close" href="javascript:void(0)" class="close_button" onclick="closeNav()">&times;</a>
+        <!-- Liens vers les différentes pages du site -->
+        <a href="HTML_index.html">Accueil</a>
+        <a href="HTML_moteur_rotatif.html">Moteur à Piston Rotatif</a>
+        <a href="HTML_moteur_en_ligne.html">Moteur en Ligne</a>
+        <a href="HTML_moteur_en_V.html">Moteur en V</a>
+        <a href="HTML_moteur_en_W.html">Moteur en W</a>
+    </div>
+
+    <!-- Contenu principal de la page -->
+    <div>
+
+        <!-- SECTION 1 : Histoire -->
+        <div class="paragraphe">
+            <h3 id="titre_HISTOIRE">HISTOIRE DU MOTEUR EN W :</h3>
+            <p id="texte_HISTOIRE">
+            Le moteur en W est une architecture rare de moteur à combustion interne, apparue au début du XXᵉ siècle, 
+            d’abord dans l’aviation, où des moteurs comme le Napier Lion (1917) ont été utilisés pour leur compacité et leur puissance. 
+            Il s’agit d’un moteur à plusieurs rangées de cylindres inclinées, formant visuellement un « W ». 
+            Longtemps resté surtout expérimental ou réservé à des applications spécifiques, 
+            il a été remis au goût du jour dans les années 1990 par le groupe Volkswagen, 
+            notamment pour des modèles haut de gamme alliant puissance extrême et format compact.
+            </p>
+            <!-- Image cliquable menant vers un article Wikipédia -->
+            <a href="https://fr.wikipedia.org/wiki/Moteur_avec_cylindres_en-W">
+                <img id="image" src="Images/Volkswagen_W16.jpg" alt="Moteur Volkswagen W16">
+            </a>
+        </div>
+
+        <!-- SECTION 2 : Fonctionnement -->
+        <div class="paragraphe">
+            <h3 id="titre_fonctionnement">FONCTIONNEMENT DU MOTEUR EN W :</h3>
+            <p id="texte_fonctionnement">
+            Le moteur en W fonctionne selon le même principe qu'un moteur à combustion interne classique, 
+            mais sa particularité réside dans son architecture : les cylindres sont disposés en trois ou quatre rangées inclinées, 
+            se partageant un même vilebrequin.
+            <br>
+            Chaque cylindre reçoit un mélange air-carburant qui est enflammé par une bougie (dans le cas d’un moteur essence) 
+            ou par compression (dans celui d’un diesel). 
+            L'explosion repousse un piston vers le bas, transmettant la force à une bielle, 
+            puis au vilebrequin, qui convertit ce mouvement linéaire en rotation pour faire tourner les roues du véhicule.
+            <br><br>
+            Grâce à cette disposition unique, un moteur en W peut loger plus de cylindres dans un espace réduit, 
+            permettant d'obtenir une puissance élevée, 
+            tout en réduisant la longueur du moteur par rapport à un V12 ou V16 classique.
+            En revanche, sa construction est plus complexe, 
+            tant au niveau de la distribution (soupapes, arbres à cames) que du refroidissement et de l’alimentation, 
+            ce qui explique son usage limité à des véhicules de très haute performance.
+            </p>
+            <!-- Image animée montrant la disposition en W -->
+            <img src="Images/W-Engine_with_60_Degree_angle.gif" alt="Animation moteur en W">
+        </div>
+
+        <!-- SECTION 3 : Exemples de voitures -->
+        <div class="paragraphe">
+            <h3 id="titre_tabl">DES VOITURES A MOTEUR EN W :</h3>
+            <table>
+                <!-- Ligne d’en-tête -->
+                <tr>
+                    <th>Volkswagen Passat W8</th>
+                    <th>Bentley Continental GT</th>
+                    <th>Bugatti Chiron</th>
+                    <th>Audi Avus Quattro</th>
+                </tr>
+                <!-- Ligne d’années de production -->
+                <tr>
+                    <td>2001 - 2004</td>
+                    <td>2002 - 2017</td>
+                    <td>2016 - 2024</td>
+                    <td>1991</td>
+                </tr>
+                <!-- Ligne d’images -->
+                <tr>
+                    <td><img src="Images/Volkswagen-Passat-B5-sedan.jpg" width="100%" alt="Volkswagen Passat W8"></td>
+                    <td><img src="Images/Bentley_Continental_GT_(II)_–_Frontansicht_(3),_5._April_2012,_Düsseldorf.jpg" width="100%" alt="Bentley Continental GT"></td>
+                    <td><img src="Images/FoS20162016_0624_132444AA_(27785299372).jpg" width="100%" alt="Bugatti Chiron"></td>
+                    <td><img src="Images/Audi_Avus_quattro.jpg" width="100%" alt="Audi Avus Quattro"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <!-- Sources du contenu -->
+        <p>
+            Texte et images prennent principalement source de <a href="https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal">wikipedia.org</a> et de <a href="https://www.innovauto.org">innovauto.org</a>
+        </p>
+        <p>Toute image ou texte est libre d'utilisation</p>
+        <!-- Lien pour remonter en haut de la page -->
+        <a href="#">Retour en haut de la page</a>
+    </footer>
+</body>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LE MOTEUR A PISTON ROTATIF</title><!--crée le nom de la fenêtre*-->
+    <link rel="stylesheet" href="CSS_all.css"><!--lie le css au html-->
+</head>
+<body id="main"><!--création du body + on lui donne un id-->
+    <script>/*creation d'une animation pour le bandeau latéral*/
+        function openNav() {
+            document.getElementById("MaBar").style.width = "350px";
+            document.getElementById("main").style.marginLeft = "350px";
+        }
+        function closeNav() {
+            document.getElementById("MaBar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+    <header>
+            <h1 id="header"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> LE MOTEUR A PISTON ROTATIF</h1><!--titre en taille h1-->
+    </header>
+    <div>
+        <div class="paragraphe">
+            <h3 id="titre_HISTOIR">HISTOIRE DU MOTEUR ROTATIF :</h3><!--titre de partie avec une taille h3-->
+                <p id="texte_HISTOIR">  
+                Le brevet fut déposé par son inventeur Félix Wankel en 1929.
+                Dans le moteur Wankel, les gaz accompagnent le mouvement du rotor, 
+                et font un tour complet en passant successivement par les quatre phases classiques :
+                admission, compression, explosion et échappement.
+                </p>
+                <img src="Images/téléchargé.jfif" height="300"><!--pour placer l'image avec le css-->
+        </div>
+            
+        <div class="paragraphe">
+            <h3 id="titre_fonctionnement">FONCTIONNEMENT DU MOTEUR ROTATIF</h3><!--titre de partie avec une taille h3-->
+            <p id="texte_fonctionnement"> 
+            Le principe du moteur à piston rotatif est identique à celui des moteurs à pistons « classiques » : compresser l'air et le carburant injecté, provoquer une combustion, qui produira une surpression motrice, puis évacuer les gaz brûlés, et recommencer le cycle.
+            <br><br>
+            Il y a aussi des différences, le moteur rotatif n'a pas besoin de soupape,
+            et chaque face du rotor agit comme un piston classique.
+            <br>
+            Ce qui evite le temps mort du moteur a piston classique cela leur confère généralement un rapport
+            puissance/cylindrée très élevé, surtout dans une plage de fonctionnement axée sur les hauts régimes.
+            Leur nombre de parties mobiles, généralement faible, les rend également plus simples d'entretien et moins sujets aux pannes.
+            Ils connaissent également moins de limites de régime, car ils ne présentent pas certaines des faiblesses des moteurs classiques, 
+            dont les éléments entrent en contact lors d'un surrégime par exemple.
+            <br><br>
+            Au rayon des défauts, la conception a dû résoudre deux problèmes spécifiques qui restent sources de difficultés.
+            Le premier est l'étanchéité au niveau des arêtes du rotor en contact avec la chambre fixe,
+            d'autant plus ardue que ces arêtes passent dans des zones de températures différentes.
+            Ce problème réduit les possibilités de compression et conduit à privilégier un fonctionnement à taux de compression plus réduit,
+            compensé dans une certaine mesure par des rotation plus rapides,
+            mais conduisant tout de même à des couples relativement faibles à bas régime.
+            Le second, lié au premier, est la lubrification : 
+            alors que dans un moteur classique l'huile peut être projetée à partir d'un carter dédié,
+            ici elle doit partager le même espace que le mélange à brûler. En cas de mauvaise lubrification,
+            l'usure au niveau des arêtes va fortement affecter le fonctionnement du moteur (étanchéité, taux de compression, consommation et perte de puissance).
+            <br><br>
+            <img src="Images/Wankel_Cycle_anim_fr.gif" width="300">
+            </p>
+        </div>
+
+
+        <div id="MaBar" class="Bar"><!-- création d'une div qui regroupe les liens vers les autres pages-->
+            <a href="javascript:void(0)" class="close_button" onclick="closeNav()">&times;</a>
+            <a href="HTML_index.html">Accueil</a>
+            <a href="HTML_moteur_rotatif.html">Moteur à Piston Rotatif</a>
+            <a href="HTML_moteur_en_ligne.html">Moteur en Ligne</a>
+            <a href="HTML_moteur_en_V.html">Moteur en V</a>
+            <a href="HTML_moteur_en_W.html">Moteur en W</a>
+        </div>
+
+        <div class="paragraphe">
+            <h3 id="titre_tabl">DES VOITURES MOTEUR A PISTON ROTATIF</h3><!--titre de partie avec une taille h3-->
+            <table id="table"><!--création du tableau-->
+                <tr><!--nouvelle ligne-->
+                    <th>Citroen GS Birotor</th>
+                    <th>NSU Spider</th>
+                    <th>Mazda RX-7</th>
+                    <th>Mazda RX-8</th>
+                    <th>Mazda 787b</th>
+                </tr>
+                <tr><!--nouvelle ligne-->
+                    <td>1973 - 1975</td>
+                    <td>1964 - 1967</td>
+                    <td>1978 - 2002</td>
+                    <td>2003 — 2012</td>
+                    <td>1990 - 1991</td>
+                </tr>
+                <tr><!--nouvelle ligne-->
+                    <td><img src="Images/1975CitroenGSBirotor.jpg" width="100%"></td><!--image-->
+                    <td><img src="Images/330px-NSU_Wankel_Spider.jpg"width="100%"></td><!--image-->
+                    <td><img src="Images/1994_Mazda_RX-7_R2_in_Vintage_Red _front_left_(Lime_Rock).jpg"width="100%"></td><!--image-->
+                    <td><img src="Images/330px-2003-2007_Mazda_RX-8_01.jfif"width="100%"></td><!--image-->
+                    <td><img src="Images/Mazda_787B.JPG"width="100%"></td><!--image-->
+                </tr>
+            </table>
+        </div>
+    
+        <footer><!-- bandeau infèrieur avec lien vers les sources-->
+        <p>Texte et images prennent principalement source de <a href="https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal">wikipedia.org</a> et de <a href="https://www.innovauto.org">innovauto.org</a></p>
+        <P>Toute image ou texte est libre de d'utilisation</P>
+        <a href="#">Retour en haut de la page</a><!--lien interne-->
+        </footer>
+    </div>
+
+</body>
+</html>

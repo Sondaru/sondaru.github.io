@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>Vroum.fr</title>
+    <link rel="stylesheet" href="CSS_all.css">
+</head>
+
+<body id="main">
+    <script>
+        function openNav() {
+            document.getElementById("MaBar").style.width = "350px";
+            document.getElementById("main").style.marginLeft = "350px";
+        }
+        function closeNav() {
+            document.getElementById("MaBar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+    <header>
+        <h1 id="header"><span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> VROUM.FR</h1> 
+    </header>
+
+    <div id="MaBar" class="Bar">
+        <a id ="close" href="javascript:void(0)" class="close_button" onclick="closeNav()">&times;</a>
+        <a href="HTML_index.html">Accueil</a>
+        <a href="HTML_moteur_rotatif.html">Moteur à Piston Rotatif</a>
+        <a href="HTML_moteur_en_ligne.html">Moteur en Ligne</a>
+        <a href="HTML_moteur_en_V.html">Moteur en V</a>
+        <a href="HTML_moteur_en_W.html">Moteur en W</a>
+    </div>
+
+    <div class="paragraphe">
+        <h2>LE MOTEUR A PISTON ROTATIF :</h2>
+        <p>Inventé par Félix Wankel en 1929, le moteur rotatif est une alternative ingénieuse au moteur à pistons classique. Grâce à un rotor triangulaire tournant dans une chambre ovale, il réalise les quatre phases du cycle moteur (admission, compression, explosion et échappement) sans avoir recours à des soupapes. Cette conception innovante offre un excellent rapport puissance/cylindrée et une mécanique plus simple et compacte, mais elle présente aussi des défis techniques, notamment en matière d’étanchéité et de lubrification, qui ont limité sa diffusion.</p>
+        <p>Cliquez sur l'image en dessous : </p>
+        <a href="HTML_moteur_rotatif.html"><img id="image" src="Images/RR-R-6.jpg"></a>
+    </div>
+
+     <div class="paragraphe">
+        <h2>LE MOTEUR EN LIGNE :</h2>
+        <p>Le moteur en ligne est l’une des architectures les plus anciennes et les plus utilisées dans l’histoire de l’automobile. Apparue à la fin du XIXᵉ siècle avec les premiers modèles de Karl Benz et Daimler, cette conception s’est imposée grâce à sa simplicité, sa fiabilité et sa robustesse. Facile à fabriquer et à entretenir, le moteur en ligne reste aujourd’hui très courant, même s’il a peu à peu laissé la place aux moteurs en V ou en W pour les véhicules plus puissants.</p>
+        <p>Cliquez sur l'image en dessous : </p>
+        <a href="HTML_moteur_en_ligne.html"><img id="image" src="Images/BMW_M88_3_Auspuffseite.jpg"></a>
+    </div>
+
+     <div class="paragraphe"> 
+        <h2>LE MOTEUR EN V :</h2>
+        <p>Le moteur en V se distingue par son architecture particulière, qui rapproche les cylindres deux par deux autour d’un vilebrequin commun. Cette configuration permet de réduire la longueur du moteur par rapport à un moteur à cylindres en ligne et d’offrir un fonctionnement plus souple, notamment aux bas régimes. Utilisée dans des modèles emblématiques comme les V-twin Harley-Davidson, elle présente des avantages notables en termes de compacité, de rigidité et de régularité de fonctionnement, tout en comportant certains défis techniques liés à l’équilibre et au refroidissement.</p>
+        <p>Cliquez sur l'image en dessous : </p>
+        <a href="HTML_moteur_en_V.html"><img id="image" src="Images/Musée_Ferrari_Maranello_0040.jpg"></a>
+    </div>
+
+     <div class="paragraphe">
+        <h2>LE MOTEUR EN W :</h2>
+        <p>Le moteur en W est une architecture originale apparue au début du XXᵉ siècle, d’abord utilisée dans l’aviation pour sa compacité et sa puissance. Composé de plusieurs rangées de cylindres inclinées formant un “W”, il a été remis au goût du jour dans les années 1990 par le groupe Volkswagen, notamment sur des modèles prestigieux comme la Bugatti Chiron. Sa conception permet d’obtenir une grande puissance dans un format réduit, mais reste complexe, ce qui réserve ce type de moteur aux véhicules de très haute performance.</p>
+        <p>Cliquez sur l'image en dessous : </p>
+        <a href="HTML_moteur_rotatif.html"><img id="image" src="Images/Volkswagen_W16.jpg"></a>
+    </div>
+    
+    <footer>
+        <p>Texte et images prennent principalement source de <a href="https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal">wikipedia.org</a> et de <a href="https://www.innovauto.org">innovauto.org</a></p>
+        <P>Toute image ou texte est libre de d'utilisation</P>
+        <a href="#">Retour en haut de la page</a>
+    </footer>
+
+</body>

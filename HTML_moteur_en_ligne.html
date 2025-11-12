@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"> <!-- Définit l'encodage pour bien afficher les caractères accentués -->
+    <title>Vroum.fr</title> <!-- Titre qui s'affiche dans l'onglet du navigateur -->
+    <link rel="stylesheet" href="CSS_all.css"> <!-- Lien vers le fichier CSS externe -->
+</head>
+
+<body id="main"> <!-- Corps principal de la page -->
+    <script>
+        // Fonction pour ouvrir la barre latérale (menu)
+        function openNav() {
+            document.getElementById("MaBar").style.width = "350px"; // Largeur de la barre = 350px
+            document.getElementById("main").style.marginLeft = "350px"; // Décale le contenu principal
+        }
+        // Fonction pour fermer la barre latérale
+        function closeNav() {
+            document.getElementById("MaBar").style.width = "0"; // Barre cachée
+            document.getElementById("main").style.marginLeft= "0"; // Contenu recentré
+        }
+    </script>
+
+    <!-- En-tête du site -->
+    <header>
+        <!-- Icône ☰ (menu hamburger) pour ouvrir la barre + titre principal -->
+        <h1 id="header">
+            <span id="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+            LE MOTEUR EN LIGNE
+        </h1> 
+    </header>
+
+    <!-- Menu latéral caché (ouvrable avec le bouton ☰) -->
+    <div id="MaBar" class="Bar">
+        <!-- Bouton × pour fermer le menu -->
+        <a id ="close" href="javascript:void(0)" class="close_button" onclick="closeNav()">&times;</a>
+        <!-- Liens de navigation entre les pages du site -->
+        <a href="HTML_index.html">Accueil</a>
+        <a href="HTML_moteur_rotatif.html">Moteur à Piston Rotatif</a>
+        <a href="HTML_moteur_en_ligne.html">Moteur en Ligne</a>
+        <a href="HTML_moteur_en_V.html">Moteur en V</a>
+        <a href="HTML_moteur_en_W.html">Moteur en W</a>
+    </div>
+
+    <!-- Contenu principal de la page -->
+    <div>
+        <!-- Section : Histoire -->
+        <div class="paragraphe">
+            <h2 id="titre_HISTOIRE">HISTOIRE DU MOTEUR EN LIGNE :</h2>
+            <p id="texte_HISTOIRE">
+            Le moteur en ligne est l’architecture de moteur à combustion interne la plus ancienne et la plus répandue. 
+            Il apparaît dès la fin du XIXᵉ siècle avec les premières automobiles à essence, comme celles de Karl Benz et Daimler, 
+            et se popularise rapidement grâce à sa simplicité et sa fiabilité. 
+            Cette architecture reste très prisée aujourd’hui pour sa mécanique simple et sa robustesse, 
+            bien qu’elle tende à être remplacée par les moteurs en V ou en W sur les véhicules très puissants ou sportifs.
+            </p>
+            <!-- Image illustrant le moteur en ligne -->
+            <img id="image" src="Images/Moteur_Bugatti_Royale_Type_41_03.jpg" alt="Moteur Bugatti Royale">
+        </div>
+
+        <!-- Section : Fonctionnement -->
+        <div class="paragraphe">
+            <h3 id="titre_fonctionnement">FONCTIONNEMENT DU MOTEUR EN LIGNE :</h3>
+            <p id="texte_fonctionnement">
+            Dans un moteur en ligne, tous les cylindres sont disposés les uns derrière les autres sur un seul vilebrequin, 
+            ce qui facilite la fabrication, l’entretien et le refroidissement. 
+            Chaque cylindre reçoit un mélange air-carburant qui est enflammé par une bougie (essence) ou par compression (diesel), 
+            provoquant l’explosion du mélange. Cette explosion pousse le piston vers le bas, 
+            transmettant le mouvement à la bielle, qui à son tour fait tourner le vilebrequin.
+            <br><br>
+            Selon le nombre de cylindres (3, 4, 6 ou 8), le moteur peut offrir un fonctionnement plus ou moins régulier 
+            et une puissance adaptée aux besoins du véhicule.
+            </p>
+            <!-- GIF animé montrant le fonctionnement du moteur -->
+            <img src="Images/Inline_8_Cylinder_with_firing_order_1-4-7-3-8-5-2-6.gif" alt="Animation moteur en ligne">
+        </div>
+
+        <!-- Section : Tableau de véhicules -->
+        <div class="paragraphe">
+            <h3 id="titre_tabl">DES VOITURES A MOTEUR EN LIGNE :</h3>
+            <table>
+                <tr>
+                    <!-- En-têtes de colonnes -->
+                    <th>CBX 1000</th>
+                    <th>MG MGB</th>
+                    <th>BMW M4</th>
+                    <th>RENAULT TWINGO</th>
+                </tr>
+                <tr>
+                    <!-- Années de production -->
+                    <td>1978 - 1982</td>
+                    <td>1962 - 1980</td>
+                    <td>2014 - 2020</td>
+                    <td>1992 - 2024</td>
+                </tr>
+                <tr>
+                    <!-- Images correspondantes à chaque modèle -->
+                    <td><img src="Images/Honda_CBX_silver.jpg" width="100%" alt="Honda CBX 1000"></td>
+                    <td><img src="Images/MG_MGC_GT_20090816_front.jpg" width="100%" alt="MG MGB"></td>
+                    <td><img src="Images/2014_Canadian_International_AutoShow_0148_(12646102484).jpg" width="100%" alt="BMW M4"></td>
+                    <td><img src="Images/1997_Renault_Twingo_1.15.jpg" width="100%" alt="Renault Twingo"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>
+            Texte et images prennent principalement source de <a href="https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal">wikipedia.org</a> et de <a href="https://www.innovauto.org">innovauto.org</a>
+        </p>
+        <p>Toute image ou texte est libre d'utilisation</p>
+        <!-- Lien de retour en haut de page -->
+        <a href="#">Retour en haut de la page</a>
+    </footer>
+</body>

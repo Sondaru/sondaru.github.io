@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LE MOTEUR EN V</title><!--créé le nom de la fenêtre*-->
+    <link rel="stylesheet" href="CSS_all.css"><!--lie le css au html-->
+</head>
+
+<body id="main"><!--création du body + on lui donne un id-->
+    <script>/*creation d'une animation pour le bandeau latéral*/
+        function openNav() {
+            document.getElementById("MaBar").style.width = "350px";
+            document.getElementById("main").style.marginLeft = "350px";
+        }
+        function closeNav() {
+            document.getElementById("MaBar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+    <header>
+            <h1 id="header"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> LE MOTEUR EN V</h1><!--titre en taille h1-->
+    </header>
+
+     <!-- Menu latéral caché (ouvrable avec le bouton ☰) -->
+    <div id="MaBar" class="Bar">
+        <!-- Bouton × pour fermer le menu -->
+        <a id ="close" href="javascript:void(0)" class="close_button" onclick="closeNav()">&times;</a>
+        <!-- Liens de navigation entre les pages du site -->
+        <a href="HTML_index.html">Accueil</a>
+        <a href="HTML_moteur_rotatif.html">Moteur à Piston Rotatif</a>
+        <a href="HTML_moteur_en_ligne.html">Moteur en Ligne</a>
+        <a href="HTML_moteur_en_V.html">Moteur en V</a>
+        <a href="HTML_moteur_en_W.html">Moteur en W</a>
+    </div>
+
+    <div id="tout"  >
+        <div class="paragraphe">
+            <h3 id="titre_description">DESCRIPTION DU MOTEUR EN V :</h3><!--titre de partie avec une taille h3-->
+            <p id="texte_description">  
+            Cette architecture permet de réduire la longueur du vilebrequin et du moteur,
+             par rapport à un moteur avec cylindres en ligne, et d'obtenir un fonctionnement
+             généralement plus souple dès les bas régimes.<BR>Les bielles d'une paire de
+            cylindres sont généralement placées sur le même maneton du vilebrequin, 
+            rarement sur deux manetons décalés. Lorsqu'elles partagent le même maneton,
+             elles peuvent être placées côte à côte ou entrecroisées, comme sur les curieux V-twin
+             équipant les motos du constructeur américain Harley-Davidson.
+        
+            </p>
+            <img src="Images/V-engine.gif" >
+        </div>
+
+        <div class="paragraphe">
+            <h3 id="titre_aventges">LES AVENTAGES DU MOTEUR EN V :</h3><!--titre de partie avec une taille h3-->
+                Les principaux avantages d'un moteur en V sont :
+                <br>
+                <p>-plus compact, il est presque deux fois plus court qu'un moteur en ligne ayant le même nombre de cylindres. Sa structure est également bien plus rigide en torsion et permet de faire partie intégrante du châssis, sur certaines voitures de compétition (comme les F1, pour ne citer qu'elles). Les moteurs en ligne ne permettent pas ce genre de pratique </p>
+                <p>-vilebrequin et arbre(s) à cames plus courts donc plus légers, plus rigides et surtout moins chers à produire </p>
+                <p>-moins de vibrations et régularité cyclique parfaite pour un V6 à 120°, ou un V12 à 60° </p>
+                <p>-abaisse généralement le centre de gravité[N 3], surtout sur les moteurs avec un V très ouvert tels que les moteurs à plat. Ceci est un gage de stabilité sur les voitures sportives surtout avec l'utilisation de carter sec.</p>
+            <h3 id="titre_inconvénients">LES INCONVENIENTS :</h3><!--titre de partie avec une taille h3-->
+                Les principaux inconvénients d'un moteur en V sont :
+                <br>
+                <p>-équilibre vibratoire difficile, pour un V6 à 45° ou 90° </p>
+                <p>-moteur plus large qu'un moteur à cylindres en ligne </p>
+                <p>-nécessité d'un circuit de refroidissement plus soigné, voire de deux pompes à eau. </p>
+        </div>
+        <div id="MaBar" class="Bar"><!-- création d'une div qui regroupe les liens vers les autres pages-->
+            <a href="javascript:void(0)" class="close_button" onclick="closeNav()">&times;</a>
+            <a href="HTML_index.html">Accueil</a>
+            <a href="HTML_moteur_rotatif.html">Moteur à Piston Rotatif</a>
+            <a href="HTML_moteur_en_ligne">Moteur en Ligne</a>
+            <a href="HTML_moteur_en_V.html">Moteur en V</a>
+            <a href="HTML_moteur_en_W.html">Moteur en W</a>
+        </div>
+        
+        <div class="paragraphe">
+            <h3 id="titre_tabl">DES VOITURES AVEC UN MOTEUR EN V :</h3><!--titre de partie avec une taille h3-->
+            <table id="table"><!--création du tableau-->
+                <tr><!--nouvelle ligne-->
+                    <th>Ferrari F50</th>
+                    <th>Lamborghini Miura SV</th>
+                    <th>Bugatti Tourbillon</th>
+                    <th>Audi R8</th>
+                    <th>Aston Martin DB12</th>
+                </tr>
+                <tr><!--nouvelle ligne-->
+                    <td>1995 - 1997</td>
+                    <td>1966 - 1973</td>
+                    <td>2026 - ?</td>
+                    <td>2007 - 2015</td>
+                    <td>2023 - ?</td>
+                </tr>
+                <tr><!--nouvelle ligne-->
+                    <td><img src="Images/Ferrari_F50_(8705895157).jpg" width="100%"></td><!--image-->
+                    <td><img src="Images/1971_Lamborghini_Miura_P400_SV.jpg"width="100%"></td><!--image-->
+                    <td><img src="Images/Bugatti_Tourbillon_-_01.jpg"width="100%"></td><!--image-->
+                    <td><img src="Images/Audi_R8_-_Flickr_-_Alexandre_Prévot_(164).jpg"width="100%"></td><!--image-->
+                    <td><img src="Images/Aston_Martin_DB12_1X7A1922.jpg"width="100%"></td><!--image-->
+                </tr>
+            </table>
+        </div>
+    
+        <footer><!-- bandeau infèrieur avec lien vers les sources-->
+        <p>Texte et images prennent principalement source de <a href="https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal">wikipedia.org</a> et de <a href="https://www.innovauto.org">innovauto.org</a></p>
+        <P>Toute image ou texte est libre de d'utilisation</P>
+        <a href="#">Retour en haut de la page</a>
+        </footer><!--lien interne-->   
+    </div>
+
+</body>
+</html>
