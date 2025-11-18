@@ -108,8 +108,14 @@ td {
   width: 25%; /* Image redimensionnée à 25% de la largeur de la page */
 }
 
+/* --- Parametrage d'une bordure --- */
 .paragraphe {
   border-width: 1px;
   border-style: solid;
   border-color:#fdc780;
+}
+
+/* --- Liste non ordonné --- */
+#liste_non_ordonne {
+  list-style-type: disc; /* Changement du petit point des lignes */
 }
